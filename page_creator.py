@@ -188,7 +188,7 @@ Return ONLY valid JSON with this exact structure:
 }}"""
 
     with claude.messages.stream(
-        model="claude-opus-4-6",
+        model="claude-sonnet-4-6",
         max_tokens=16000,
         thinking={"type": "adaptive"},
         messages=[{"role": "user", "content": prompt}],

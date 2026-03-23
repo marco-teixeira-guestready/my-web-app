@@ -116,7 +116,7 @@ Return ONLY valid JSON — an array of cluster objects. No prose, no markdown fe
 """
 
     with claude.messages.stream(
-        model="claude-opus-4-6",
+        model="claude-sonnet-4-6",
         max_tokens=8000,
         thinking={"type": "adaptive"},
         messages=[{"role": "user", "content": prompt}],
